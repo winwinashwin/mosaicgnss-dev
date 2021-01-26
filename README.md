@@ -1,6 +1,6 @@
 # mosaicgnss-dev
 
-My ROS driver development environment for the Septentrio Mosiac GNSS module.
+My ROS driver development environment for the Septentrio Mosaic GNSS module.
 
 ## Setup
 
