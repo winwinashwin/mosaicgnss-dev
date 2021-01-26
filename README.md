@@ -33,12 +33,12 @@ In a new shell, run
 
 ## Other
 
-* The `shell.sh` executable script can be used a shell replacement. By default it tries to spawn a shell from a running container. If unsuccessful, it spawns a bash shell from root system instead.
+- The `shell.sh` executable script can be used a shell replacement. By default it tries to spawn a shell from a running container. If unsuccessful, it spawns a bash shell from root system instead.
 
 eg: for VSCode, in the `settings.json` file, add the following line:
 
 ```json
 {
-    "terminal.integrated.shell.linux": "${workspaceFolder}/shell.sh"
+  "terminal.integrated.shell.linux": "${workspaceFolder}/shell.sh"
 }
 ```
