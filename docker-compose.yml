@@ -2,7 +2,7 @@ version: "2"
 
 services:
   rosmaster:
-    container_name: ros_master
+    container_name: rosmaster
     image: ros:melodic-ros-base-stretch
     command: roscore
     ports: 
