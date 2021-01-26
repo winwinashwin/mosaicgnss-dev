@@ -1,0 +1,7 @@
+.git/*
+.vscode/*
+
+resources/*
+mosaic_gnss_driver/*
+
+*.md
