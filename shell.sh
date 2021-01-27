@@ -8,4 +8,17 @@
 CONTAINER_NAME="mosaic_driver"
 PROC="/bin/bash"
 
-docker exec -it $CONTAINER_NAME $PROC || /bin/bash
+CONTAINER_ID="$(docker ps -qf name=$CONTAINER_NAME)"
+
+if [ ! $CONTAINER_ID ]; then
+	echo "[-] Could not locate container $CONTAINER_NAME"
+    echo "[-] Calling system bash instead"
+	/bin/bash
+else
+    echo "[+] Running $PROC in container $CONTAINER_ID"
+	docker exec -it $CONTAINER_NAME $PROC
+fi
+
+/bin/bash
+
+exit 0
