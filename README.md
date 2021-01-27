@@ -2,6 +2,29 @@
 
 My ROS driver development environment for the Septentrio Mosaic GNSS module.
 
+## Info
+
+- OS
+
+```
+Distributor ID: Debian
+Description: Debian GNU/Linux 9.13 (stretch)
+Release: 9.13
+Codename: stretch
+```
+
+- g++
+
+```
+g++ (Debian 6.3.0-18+deb9u1) 6.3.0 20170516
+```
+
+- CMake
+
+```
+cmake version 3.7.2
+```
+
 ## Setup
 
 - Clone repository
