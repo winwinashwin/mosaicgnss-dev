@@ -1,7 +1,15 @@
-.git/*
+# config
 .vscode/*
 
+# dirs
 resources/*
 mosaic_gnss_driver/*
 
+# git
+.git/*
+.gitignore
+.gitmodules
+
+# files
+shell.sh
 *.md
