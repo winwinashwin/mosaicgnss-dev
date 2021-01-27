@@ -1,0 +1,3 @@
+[submodule "mosaic_gnss_driver"]
+	path = mosaic_gnss_driver
+	url = git@github.com:Team-Abhiyaan/mosaic_gnss_driver.git
