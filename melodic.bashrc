@@ -21,7 +21,11 @@ cm () {
     source $ROS_WS/devel/setup.bash
 }
 
+ct () {
+    cd $ROS_WS
+    catkin_make run_tests
+}
+
 alias ..="cd .."
 alias ...="cd ..."
 alias cls=clear
-alias pkgtest="catkin_make run_tests_mosaic_gnss_driver"
