@@ -11,7 +11,7 @@ LD_LIBS    := pcap
 
 LD_FLAGS   := $(addprefix -l, ${LD_LIBS})
 
-TARGET     := tcpstream
+TARGET     := stream
 
 src/%.o: src/%.cpp
 	$(CC) $(CXXFLAGS) -c -o $@ $<
