@@ -10,9 +10,7 @@ services:
 
   mosaic_driver:
     container_name: mosaic_driver
-    build: 
-      context: .
-      dockerfile: melodic.Dockerfile
+    build: ./docker/melodic
     tty: true
     volumes: 
         - ./mosaic_gnss_driver:/catkin_ws/src/mosaic_gnss_driver

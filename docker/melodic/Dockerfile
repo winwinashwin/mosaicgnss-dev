@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     ros-melodic-nmea-msgs \
     && rm -rf /var/lib/apt/lists/*
 
-COPY melodic.bashrc /root/.bashrc
+COPY root.bashrc /root/.bashrc
 
 ENV ROS_WS /catkin_ws
 RUN mkdir -p ${ROS_WS}/src
