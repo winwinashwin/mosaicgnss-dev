@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := all
 
 CC         := g++
-CXXFLAGS   := -Wall
+CXXFLAGS   := -Wall -Wshadow -Ofast
 
 RM         := rm -f
 
