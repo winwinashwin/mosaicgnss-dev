@@ -1,4 +1,4 @@
-FROM ros:noetic-ros-base-stretch
+FROM ros:noetic-ros-base-focal
 
 RUN apt-get update && apt-get install --no-install-recommends -y \
     libpcap-dev \

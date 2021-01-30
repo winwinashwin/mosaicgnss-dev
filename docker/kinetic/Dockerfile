@@ -1,4 +1,4 @@
-FROM ros:kinetic-ros-base-stretch
+FROM ros:kinetic-ros-base-xenial
 
 RUN apt-get update && apt-get install --no-install-recommends -y \
     libpcap-dev \
