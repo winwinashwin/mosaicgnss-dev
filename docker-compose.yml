@@ -3,17 +3,17 @@ version: "2"
 services:
   rosmaster:
     container_name: rosmaster
-    image: ros:melodic-ros-base-stretch
+    build: ${DEVEL_ROS_DISTRO}
     command: roscore
     ports: 
       - "11311:11311"
 
   mosaic_driver:
     container_name: mosaic_driver
-    build: ./docker/melodic
+    build: ${DEVEL_ROS_DISTRO}
     tty: true
     volumes: 
-        - ./mosaic_gnss_driver:/catkin_ws/src/mosaic_gnss_driver
+        - ${MOSAIC_ROS_PKG}:/catkin_ws/src/mosaic_gnss_driver
     environment:
       - "ROS_MASTER_URI=http://rosmaster:11311"
     depends_on:

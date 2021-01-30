@@ -34,6 +34,8 @@ git clone https://github.com/ashwin5059198/mosaicgnss-dev.git
 cd mosaicgnss-dev
 ```
 
+- Specify build context in `.env` file
+
 - Build required images
 
 ```bash
