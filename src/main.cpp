@@ -1,6 +1,6 @@
 #include "pcap_reader.hpp"
 #include "streamers.hpp"
-#include "macro_logger.h"
+#include "macrologger.hpp"
 
 #include <cstring>
 

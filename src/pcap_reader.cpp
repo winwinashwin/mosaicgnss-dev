@@ -5,7 +5,7 @@
 #include <thread>
 
 #include "pcap_reader.hpp"
-#include "macro_logger.h"
+#include "macrologger.hpp"
 
 using namespace pcapReader;
 

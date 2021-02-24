@@ -62,12 +62,11 @@ eg: for VSCode, in the `settings.json` file, add the following line:
   - To stream file `data/sbf-all.pcap` via `TCP` in port `9999`, do
 
   ```bash
-  ./stream tcp 9999 data/sbf-all.pcap
+  ./build/stream tcp 9999 data/sbf-all.pcap
   ```
 
 **NB**: For parameter `device` in the parameter file, use IP address of host machine in docker network.
 
 ```bash
 ip -4 a s docker0 | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*'
-
 ```
